@@ -1,7 +1,8 @@
  // 2048 Game
- var animationSpeed = 500;
- var isTileLocked = true;
+
  $(document).ready(function() {
+      var animationSpeed = 500;
+      var isTileLocked = true;
      for (i = 0; i < 4; ++i) {
          for (j = 0; j < 4; ++j) {
              $('#tilesWrapper').append(
@@ -10,10 +11,10 @@
          }
          $('#tilesWrapper').append('<div style = "clear:both"></div>');
      }
+     
      generateTileValue(2);
      generateTileValue(2);
- });
-
+     
  function generateTileValue(tileValue) {
      // Get the count of empty Tiles  
      var clearTilesCount = $('.clearTile').length;
@@ -425,3 +426,5 @@
      $('.tileCell[data-column=' + dColumn + '][data-row=' + cRow + ']').removeClass(
          'clearTile').addClass('filledTile');
  }
+     
+ });
