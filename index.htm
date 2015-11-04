@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>URL Shortener</title>
+    <!-- Latest compiled and minified CSS for BootStrap-->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    rel="stylesheet"><!-- BootStrap theme -->
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+    rel="stylesheet"><!-- Custom Style Sheet -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body role="document">
+    <!-- Navigation Bar with Branding -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class=
+                "navbar-toggle collapsed" data-target="#navbar" data-toggle=
+                "collapse" type="button"><span class="sr-only">Toggle
+                navigation</span> <span class="icon-bar"></span> <span class=
+                "icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.htm">Hou Fong App</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.htm">URL Shortener</a>
+                    </li>
+                    <li>
+                        <a href="2048.htm">2048 Game</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+        <div class="page-header">
+            <h1>URL Shortener</h1>
+        </div>
+        <p></p>
+        <div id="systemMsg"></div>
+        <div class="form-group">
+            <form class="form" id="submitLongURL" method="post" name=
+            "submitLongURL" onsubmit="return submitLongURL()" role="form">
+                `
+                <div class="form-group">
+                    <label for="URL">Long URL:</label> <input class=
+                    "form-control" id="url" placeholder=
+                    "http://www.mindvalley.com" type="text">
+                </div><button class="btn btn-lg btn-primary" id="submitBtn"
+                type="submit">Short it</button>
+            </form><input id="result" name="result" type="hidden" value=
+            "English">
+        </div>
+        <p></p>
+    </div>
+    <!-- Placed Javascript at the bottom of file for better page load performance -->
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js">
+    </script> <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script> <!-- Custom Script --> 
+    <script src="main.js">
+    </script>
+</body>
+</html>
